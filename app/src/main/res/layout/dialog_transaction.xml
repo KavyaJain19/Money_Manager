@@ -1,0 +1,8 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:padding="20dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+<Spinner android:id="@+id/type" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+<EditText android:id="@+id/date" android:hint="Date (dd-MM-yyyy)" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+<EditText android:id="@+id/amount" android:hint="Amount" android:inputType="numberDecimal" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+<EditText android:id="@+id/category" android:hint="Category" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+<EditText android:id="@+id/method" android:hint="Payment method" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+<EditText android:id="@+id/note" android:hint="Note (optional)" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</LinearLayout>

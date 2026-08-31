@@ -1,0 +1,18 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/bg" android:layout_width="match_parent" android:layout_height="match_parent">
+<LinearLayout android:layout_width="match_parent" android:layout_height="58dp" android:gravity="center_vertical" android:background="@color/primary">
+<Button android:id="@+id/backBtn" android:text="‹" android:textSize="24sp" android:background="@android:color/transparent" android:textColor="@android:color/white" android:layout_width="55dp" android:layout_height="match_parent"/>
+<TextView android:id="@+id/friendName" android:text="Friend" android:textColor="@android:color/white" android:textSize="20sp" android:textStyle="bold" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content"/>
+<Button android:id="@+id/addBtn" android:text="＋" android:textSize="20sp" android:background="@android:color/transparent" android:textColor="@android:color/white" android:layout_width="55dp" android:layout_height="match_parent"/>
+</LinearLayout>
+<ScrollView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"><LinearLayout android:orientation="vertical" android:padding="14dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+<TextView android:id="@+id/dueValue" android:gravity="center" android:textSize="21sp" android:textStyle="bold" android:textColor="@color/income" android:padding="18dp" android:background="@drawable/card_bg" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+<LinearLayout android:orientation="horizontal" android:layout_marginTop="10dp" android:layout_width="match_parent" android:layout_height="78dp">
+<TextView android:id="@+id/paidValue" android:gravity="center" android:textSize="14sp" android:background="@drawable/card_bg" android:layout_width="0dp" android:layout_weight="1" android:layout_height="match_parent"/>
+<Space android:layout_width="8dp" android:layout_height="1dp"/>
+<TextView android:id="@+id/receivedValue" android:gravity="center" android:textSize="14sp" android:background="@drawable/card_bg" android:layout_width="0dp" android:layout_weight="1" android:layout_height="match_parent"/>
+</LinearLayout>
+<TextView android:text="Payment History" android:textSize="18sp" android:textStyle="bold" android:layout_marginTop="18dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+<LinearLayout android:id="@+id/history" android:orientation="vertical" android:background="@drawable/card_bg" android:layout_marginTop="8dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</LinearLayout></ScrollView>
+<Button android:id="@+id/bottomAdd" android:text="＋ Add Payment" android:layout_width="match_parent" android:layout_height="56dp"/>
+</LinearLayout>
