@@ -1,8 +1,61 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:padding="20dp" android:layout_width="match_parent" android:layout_height="wrap_content">
-<Spinner android:id="@+id/type" android:layout_width="match_parent" android:layout_height="wrap_content"/>
-<EditText android:id="@+id/date" android:hint="Date (dd-MM-yyyy)" android:layout_width="match_parent" android:layout_height="wrap_content"/>
-<EditText android:id="@+id/amount" android:hint="Amount" android:inputType="numberDecimal" android:layout_width="match_parent" android:layout_height="wrap_content"/>
-<EditText android:id="@+id/category" android:hint="Category" android:layout_width="match_parent" android:layout_height="wrap_content"/>
-<EditText android:id="@+id/method" android:hint="Payment method" android:layout_width="match_parent" android:layout_height="wrap_content"/>
-<EditText android:id="@+id/note" android:hint="Note (optional)" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:text="Transaction Type"
+        android:textSize="12sp"
+        android:textColor="@color/muted"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <Spinner
+        android:id="@+id/type"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginBottom="8dp"/>
+
+    <EditText
+        android:id="@+id/amount"
+        android:hint="Amount (₹)"
+        android:inputType="numberDecimal"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"/>
+
+    <EditText
+        android:id="@+id/date"
+        android:hint="📅 Date (Tap to pick)"
+        android:focusable="false"
+        android:clickable="true"
+        android:cursorVisible="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"/>
+
+    <AutoCompleteTextView
+        android:id="@+id/category"
+        android:hint="Category (e.g. Food, Groceries)"
+        android:completionThreshold="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"/>
+
+    <AutoCompleteTextView
+        android:id="@+id/method"
+        android:hint="Payment Method (e.g. UPI, Cash)"
+        android:completionThreshold="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"/>
+
+    <EditText
+        android:id="@+id/note"
+        android:hint="Note / Description (optional)"
+        android:inputType="textCapSentences"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
 </LinearLayout>
